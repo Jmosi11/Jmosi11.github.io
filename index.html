@@ -7,7 +7,7 @@ description: "get laptop of your choice."
 
 <section class="mt-4 mb-5">
 
- <!-- homepage -->  
+ <!-- homepage banner-->  
 <div class="thecontainer">
   <a href="">
     <img src="assets/images/homepage.png" class="img-fluid object-fit-cover" alt="Micro Laptops" >
@@ -15,12 +15,23 @@ description: "get laptop of your choice."
 </div>
 </div>
 <div class="container-fluid">
+ 
+<!-- Services -->
+<ul class="featuredparent-container" style="display: flex; flex-wrap: wrap;">
+    <li>
+     <a class="services" href="">
+         <div class="wrappinUP">
+            <img class="imageServices" src=" " alt="">
+         </div>
+     </a>
+    </li>
+</ul>
 
-  <!-- featured section -->
- <div class="featured-title" style="text-align:left;">
+<!-- featured section -->
+<ul class="featured-title" style="text-align:left;">
     <h1 style="color:dark; font-size:30px;">featured laptops</h1>
- </div>
-<div class="featuredparent-container" style="display: flex; flex-wrap: wrap;">
+</ul>
+<ul class="featuredparent-container" style="display: flex; flex-wrap: wrap;">
 {% for category in site.categories %}
     {% if category[0] == "featured" %}
             {% assign pages_list = category[1] %}
@@ -34,7 +45,7 @@ description: "get laptop of your choice."
             {% assign pages_list = nil %}
         {% endif %}
 {% endfor %}
-</div>
+</ul>
   
 </div>    
  
