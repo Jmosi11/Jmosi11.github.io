@@ -89,10 +89,10 @@ description: "get laptop of your choice."
  </div>
 
 <!-- featured section -->
-<ul class="featured-title" style="text-align:left;">
+<ul class="featured-title" style="text-align:left; padding: 0px 25px;">
     <h1 style="color:dark; font-size:30px;">featured laptops</h1>
 </ul>
-<ul class="featuredparent-container" style="display: flex; flex-wrap: wrap;">
+<ul class="featuredparent-container" style="display: flex; flex-wrap: wrap; padding: 0px 25px;">
 {% for category in site.categories %}
     {% if category[0] == "featured" %}
             {% assign pages_list = category[1] %}
