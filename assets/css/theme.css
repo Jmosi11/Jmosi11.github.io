@@ -185,6 +185,23 @@ cursor: zoom-in;
     flex: 0 0 auto;
     margin-right: 20px;
 }
+.featuredparent-container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
 /*slide css end here*/
 .more {
 	color:white;
