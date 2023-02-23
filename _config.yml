@@ -2,7 +2,7 @@
 name: 'M laptops'
 description: 'Get Laptop of your choice.'
 logo: 'assets/images/KunaNamna.png'
-favicon: 'assets/images/sal.png'
+favicon: 'assets/images/KunaNamnaFav.png'
 url: 'https://www.kunanamna.com'
 baseurl: 
 avatar: 'assets/images/sal.jpg'
