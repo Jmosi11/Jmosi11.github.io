@@ -1,12 +1,12 @@
 # Site
-name: 'M laptops'
-description: 'Get Laptop of your choice.'
+name: 'KunaNamna'
+description: 'Karibu Kunanamna.'
 logo: 'assets/images/NahiiJe.png'
 favicon: 'assets/images/KunaNamnaFav.png'
 url: 'https://www.kunanamna.com'
 baseurl: 
 avatar: 'assets/images/sal.jpg'
-disqus: 'demowebsite'
+disqus: 'Kunanamna'
 email: ''
 
 include: ["_pages"]
