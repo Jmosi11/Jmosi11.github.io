@@ -1,37 +1,32 @@
-let carousel = document.querySelector('.carousel');
-let carouselItems = document.querySelectorAll('.carousel-item');
-let currentItem = 0;
-let isEnabled = true;
+const slider = document.querySelector('.slider');
+const container = slider.querySelector('.featuredparent-container');
+const prevBtn = slider.querySelector('.prev-btn');
+const nextBtn = slider.querySelector('.next-btn');
+const slides = container.children;
+const slideWidth = slides[0].getBoundingClientRect().width;
+const slideMargin = parseInt(getComputedStyle(slides[0]).marginRight);
+const slideCount = slides.length;
+const visibleSlides = Math.floor(slider.clientWidth / (slideWidth + slideMargin));
+let currentIndex = 0;
 
-function changeCurrentItem(n) {
-    currentItem = (n + carouselItems.length) % carouselItems.length;
+function moveToSlide(index) {
+  container.style.transform = `translateX(-${index * (slideWidth + slideMargin)}px)`;
+  currentIndex = index;
 }
 
-function hideItem(direction) {
-    isEnabled = false;
-    carouselItems[currentItem].classList.add(direction);
-    carouselItems[currentItem].addEventListener('animationend', function() {
-        this.classList.remove('active', direction);
-    });
+function updateButtons() {
+  prevBtn.disabled = currentIndex === 0;
+  nextBtn.disabled = currentIndex >= slideCount - visibleSlides;
 }
 
-function showItem(direction) {
-    carouselItems[currentItem].classList.add('next', direction);
-    carouselItems[currentItem].addEventListener('animationend', function() {
-        this.classList.remove('next', direction);
-        this.classList.add('active');
-        isEnabled = true;
-    });
-}
-
-document.querySelector('.carousel-button-prev').addEventListener('click', function() {
-    if (isEnabled) {
-        previousItem(currentItem);
-    }
+prevBtn.addEventListener('click', () => {
+  moveToSlide(currentIndex - 1);
+  updateButtons();
 });
 
-document.querySelector('.carousel-button-next').addEventListener('click', function() {
-    if (isEnabled) {
-        nextItem(currentItem);
-    }
+nextBtn.addEventListener('click', () => {
+  moveToSlide(currentIndex + 1);
+  updateButtons();
 });
+
+updateButtons();
