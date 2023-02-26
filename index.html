@@ -20,6 +20,7 @@ description: "KunaNamna."
 <ul class="featured-title" style="text-align:left; padding: 0px 25px;">
     <h1 style="color:dark; font-size:30px;">Huduma zetu</h1>
 </ul>
+ <div class="slider">
 <ul class="featuredparent-container" style="display: flex; flex-wrap: wrap; padding: 0px 25px;">
 {% for category in site.categories %}
     {% if category[0] == "featured" %}
@@ -35,7 +36,12 @@ description: "KunaNamna."
         {% endif %}
 {% endfor %}
 </ul>
-  
+   <div class="slider-buttons">
+    <button class="prev-btn">&#10094;</button>
+    <button class="next-btn">&#10095;</button>
+  </div>
+</div>
+ 
 </div>    
  
 </section>
