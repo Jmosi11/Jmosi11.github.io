@@ -41,13 +41,13 @@ description: "KunaNamna."
     <h1 style="color:dark; font-size:30px;">Huduma zetu</h1>
 </ul>
  <div style="display: flex; justify-content: center; ">
-<ul class="featuredparent-container" style="display: flex; flex-wrap: wrap; padding: 0px 25px; column-gap: 10px;">
+<ul class="featuredparent-container" style="display: flex; flex-wrap: wrap; padding: 0px 25px; column-gap: 10px; justify-content: center;">
 {% for category in site.categories %}
     {% if category[0] == "featured" %}
             {% assign pages_list = category[1] %}
             {% for post in pages_list %}
               {% if post.title != null %}
-                  <div style="flex: 1 0 0px;">
+                  <div style="flex: 0 0 0px;">
                       {% include card-post.html %}
                   </div>
               {% endif %}
