@@ -87,7 +87,22 @@ display: flex;
 justify-content: center;
 height: 3.75rem;
 }
-
+.full-width headline{
+padding-top: 3rem;
+padding-bottom: 3rem;
+position: relative;
+}
+@media screen and (min-width: 600px) {
+  /* Styles for devices with a maximum width of 600px */
+  .full-width headline {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+.ourMotto{
+text-align: center;
+width: 100%;
+}
 .nav-link,
 .dropdown-item {
 font-weight: 700;
