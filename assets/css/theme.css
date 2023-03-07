@@ -128,12 +128,12 @@ font-weight: 400;
     position: relative;
 }
 @media screen and (min-width: 480px){
-    .Axontent{
+    .Acontent{
         height: 25rem;
     }
 }
 @media screen and (min-width: 600px){
-    .Axontent{
+    .Acontent{
         height: 30rem;
     }
 }
