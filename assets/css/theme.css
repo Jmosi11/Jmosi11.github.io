@@ -127,12 +127,6 @@ font-weight: 400;
     height: 20rem;
     position: relative;
 }
-@media screen and (min-width: 600px)
-{
-.Acontent{
-    height: 30rem;
-}  
-}
 .Aimage-grid-wrapper{
     left: -5;
 }
