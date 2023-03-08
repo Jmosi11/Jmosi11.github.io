@@ -38,11 +38,11 @@ layout: defaultForPost
     				{{ content }}
                     
                    
-                   {% if page.visit %}
+                   
                    <p><a target="_blank" href="https://wa.me/255743236694?text={{ post.title }} - {{ post.url }}" class="btn btn-gray d-block font-weight-bold">
                        Nunua <i class="fab fa-whatsapp"></i></a>
                    </p>
-                   {% endif %}                 
+                                  
                    {% for category in page.categories %}
                       <!--<a class="btn btn-sm btn-primary mt-2" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">
                         # {{ category | downcase }}
