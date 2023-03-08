@@ -6,7 +6,7 @@ layout: defaultForPost
     	<div class="row justify-content-center">
     		<div class="col-md-8">
                 
-    			<article class="card">
+    			<article class="card" style="background-color: black;">
                     
                  {% if page.image %} 
                    <!-- 
@@ -20,7 +20,7 @@ layout: defaultForPost
                     <img class="card-img-top mb-2" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}"> 
                 {% endif %}
                     
-    			<div class="card-body">
+    			<div class="card-body" style="background-color: #12322e;">
                     
     				<h1 class="display-4">
     				    {{page.title}} 
