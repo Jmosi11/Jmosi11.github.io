@@ -1,9 +1,8 @@
 ---
-title: "About"
+title: "Kuhusu sisi"
 permalink: "/about.html"
 image: ""
 ---
 
-Hi, guys!  
-This will be about page
+Sisi ni wapambanaji
 
