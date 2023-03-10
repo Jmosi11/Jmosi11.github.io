@@ -1,3 +1,8 @@
+---
+title: "Kuhusu sisi"
+permalink: "/webstore.html"
+image: ""
+---
 **Webstore**
 
 Ni website kwa ajili ya wafanyabiashara wadogo na kati, ambao wanatumia mitandao ya kijamii kutangaza biashara zao.
